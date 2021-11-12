@@ -1,0 +1,441 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" type="Texture" id=2]
+[ext_resource path="res://Virtual Guy/png/BG/BG.png" type="Texture" id=3]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/1.png" type="Texture" id=4]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/2.png" type="Texture" id=5]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/4.png" type="Texture" id=6]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/5.png" type="Texture" id=7]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/3.png" type="Texture" id=8]
+[ext_resource path="res://changeS.tscn" type="PackedScene" id=9]
+[ext_resource path="res://dead.tscn" type="PackedScene" id=10]
+[ext_resource path="res://map/craftpix-net-352322-nature-pixel-art-environment-free-assets-pack/PNG/Objects/pointer.png" type="Texture" id=11]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 04.png" type="Texture" id=12]
+[ext_resource path="res://map/craftpix-net-352322-nature-pixel-art-environment-free-assets-pack/PNG/Objects/rocks1_5.png" type="Texture" id=13]
+[ext_resource path="res://map/craftpix-net-352322-nature-pixel-art-environment-free-assets-pack/PNG/Objects/rocks1_2.png" type="Texture" id=14]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 02.png" type="Texture" id=15]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 03.png" type="Texture" id=16]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Back Palm Trees/Back Palm Tree Regular 01.png" type="Texture" id=18]
+[ext_resource path="res://player/piret/grassland_tileset/grassland_tileset/PNG/bg_cloud_D.png" type="Texture" id=19]
+[ext_resource path="res://Skyenemy.tscn" type="PackedScene" id=20]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/1.png" type="Texture" id=22]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/8.png" type="Texture" id=23]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/7.png" type="Texture" id=24]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/2.png" type="Texture" id=25]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/4.png" type="Texture" id=26]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/3.png" type="Texture" id=27]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/6.png" type="Texture" id=28]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/5.png" type="Texture" id=29]
+[ext_resource path="res://map/craftpix-net-352322-nature-pixel-art-environment-free-assets-pack/PNG/Objects/fence.png" type="Texture" id=30]
+[ext_resource path="res://map/craftpix-net-352322-nature-pixel-art-environment-free-assets-pack/PNG/Objects/pink_bush2.png" type="Texture" id=31]
+[ext_resource path="res://start/Sky Acoustic Dramatic Background Music for Videos - Best Background Music.wav" type="AudioStream" id=32]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 46.0165, 15.6214 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 22 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 24 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="sky" type="Node2D"]
+
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 2026.2, 116.913 )
+scale = Vector2( 4.08704, 4.08704 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 2.85648, -0.697258, 996.566, 271.24 )
+
+[node name="bg_cloud_D" type="Sprite" parent="bg"]
+position = Vector2( -413.848, 12.9464 )
+scale = Vector2( 1.10847, 1.10847 )
+texture = ExtResource( 19 )
+
+[node name="bg_cloud_D2" type="Sprite" parent="bg"]
+position = Vector2( -284.086, 58.2935 )
+scale = Vector2( 1.10847, 1.10847 )
+texture = ExtResource( 19 )
+
+[node name="bg_cloud_D3" type="Sprite" parent="bg"]
+position = Vector2( -181.532, 25.1552 )
+scale = Vector2( 1.10847, 1.10847 )
+texture = ExtResource( 19 )
+
+[node name="bg_cloud_D6" type="Sprite" parent="bg"]
+position = Vector2( 118.158, 22.3646 )
+scale = Vector2( 1.23305, 1.23305 )
+texture = ExtResource( 19 )
+
+[node name="bg_cloud_D7" type="Sprite" parent="bg"]
+position = Vector2( 216.999, -62.3995 )
+scale = Vector2( 1.50712, 1.50712 )
+texture = ExtResource( 19 )
+
+[node name="bg_cloud_D8" type="Sprite" parent="bg"]
+position = Vector2( 300.617, 13.6441 )
+scale = Vector2( 2.05527, 2.05527 )
+texture = ExtResource( 19 )
+
+[node name="bg_cloud_D4" type="Sprite" parent="bg"]
+position = Vector2( -270.407, -44.6095 )
+scale = Vector2( 1.83103, 1.83103 )
+texture = ExtResource( 19 )
+
+[node name="bg_cloud_D5" type="Sprite" parent="bg"]
+position = Vector2( -37.7166, -40.0748 )
+scale = Vector2( 1.95561, 1.95561 )
+texture = ExtResource( 19 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="bg"]
+stream = ExtResource( 32 )
+volume_db = -15.0
+pitch_scale = 0.8
+autoplay = true
+
+[node name="oj" type="Sprite" parent="."]
+
+[node name="pink_bush4" type="Sprite" parent="oj"]
+position = Vector2( 2412.13, 23.6934 )
+scale = Vector2( 3.08804, 3.08804 )
+texture = ExtResource( 14 )
+
+[node name="pink_bush3" type="Sprite" parent="oj"]
+position = Vector2( 2283.72, 23.2164 )
+scale = Vector2( 2.19714, 2.19714 )
+texture = ExtResource( 13 )
+
+[node name="pointer" type="Sprite" parent="oj"]
+position = Vector2( 2275.72, 39.3221 )
+texture = ExtResource( 11 )
+
+[node name="AnimatedSprite10" type="AnimatedSprite" parent="oj"]
+position = Vector2( 2926.17, 445.329 )
+scale = Vector2( 7.11296, 7.11296 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite11" type="AnimatedSprite" parent="oj"]
+position = Vector2( 2741.17, 532.165 )
+scale = Vector2( 7.11296, 7.11296 )
+frames = SubResource( 1 )
+playing = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="oj"]
+position = Vector2( 46.4334, 301.118 )
+frames = SubResource( 2 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="oj"]
+position = Vector2( 2348.15, 23.3781 )
+frames = SubResource( 2 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="oj"]
+position = Vector2( 190.212, 252.437 )
+scale = Vector2( 3.45278, 3.45278 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="oj"]
+position = Vector2( 769.776, 539.699 )
+scale = Vector2( 4.55521, 4.55521 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="oj"]
+position = Vector2( 860.49, 607.735 )
+scale = Vector2( 4.55521, 4.55521 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="oj"]
+position = Vector2( 1316.58, 517.021 )
+scale = Vector2( 6.99631, 6.99631 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="oj"]
+position = Vector2( 1409.82, 564.898 )
+scale = Vector2( 4.24023, 4.24023 )
+frames = SubResource( 1 )
+playing = true
+
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="oj"]
+position = Vector2( 2256.48, 431.346 )
+scale = Vector2( 5.81513, 5.81513 )
+frames = SubResource( 1 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite9" type="AnimatedSprite" parent="oj"]
+position = Vector2( 2405.15, 554.818 )
+scale = Vector2( 5.81513, 5.81513 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite12" type="AnimatedSprite" parent="oj"]
+position = Vector2( 1744.44, 547.267 )
+scale = Vector2( 5.81513, 5.81513 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite13" type="AnimatedSprite" parent="oj"]
+position = Vector2( 305.977, 585.022 )
+scale = Vector2( 5.81513, 5.81513 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="Sprite" type="Sprite" parent="oj"]
+position = Vector2( 119.761, 388.027 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="oj"]
+position = Vector2( 457.254, 348.25 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite2/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="Sprite3" type="Sprite" parent="oj"]
+position = Vector2( 792.264, 297.376 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite3/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="Sprite12" type="Sprite" parent="oj"]
+position = Vector2( 1059.25, 172.359 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite12/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="Sprite5" type="Sprite" parent="oj"]
+position = Vector2( 1353.46, 272.775 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite5/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="Sprite6" type="Sprite" parent="oj"]
+position = Vector2( 1998.34, 185.094 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite6/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="Sprite7" type="Sprite" parent="oj"]
+position = Vector2( 1649.74, 187.399 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite7/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="Sprite11" type="Sprite" parent="oj"]
+position = Vector2( 2332.56, 106.331 )
+scale = Vector2( 2.49616, 2.49616 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 96, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj/Sprite11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oj/Sprite11/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="pink_bush2" type="Sprite" parent="oj"]
+position = Vector2( 2064.95, 101.791 )
+scale = Vector2( 3.08804, 3.08804 )
+texture = ExtResource( 14 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="oj"]
+
+[node name="AnimatedSprite15" type="AnimatedSprite" parent="oj"]
+position = Vector2( 2000.94, 107.521 )
+scale = Vector2( 2.43904, 2.43904 )
+frames = SubResource( 4 )
+playing = true
+
+[node name="AnimatedSprite14" type="AnimatedSprite" parent="oj"]
+position = Vector2( 1982.99, 117.691 )
+scale = Vector2( 1.76408, 1.76408 )
+frames = SubResource( 4 )
+playing = true
+
+[node name="AnimatedSprite16" type="AnimatedSprite" parent="oj"]
+position = Vector2( 2398.56, 41.4365 )
+scale = Vector2( 1.76408, 1.76408 )
+frames = SubResource( 4 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite17" type="AnimatedSprite" parent="oj"]
+position = Vector2( 175.957, 322.26 )
+scale = Vector2( 1.76408, 1.76408 )
+frames = SubResource( 4 )
+frame = 7
+playing = true
+
+[node name="fence" type="Sprite" parent="oj"]
+position = Vector2( 126.397, 338.683 )
+scale = Vector2( 1.18783, 1.18783 )
+texture = ExtResource( 30 )
+
+[node name="pink_bush2" type="Sprite" parent="oj/fence"]
+position = Vector2( 206.314, -42.4895 )
+scale = Vector2( 1.2486, 1.2486 )
+texture = ExtResource( 31 )
+
+[node name="pink_bush3" type="Sprite" parent="oj/fence"]
+position = Vector2( 224.196, -38.7434 )
+texture = ExtResource( 31 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 54.864, 300.351 )
+
+[node name="dead" parent="." instance=ExtResource( 10 )]
+position = Vector2( 353.384, 475.299 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="dead2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 694.014, 430.697 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="dead3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1498.02, 364.99 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="dead7" parent="." instance=ExtResource( 10 )]
+position = Vector2( 986.886, 349.117 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="dead8" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1212.3, 331.655 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="dead4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1843.45, 297.815 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="dead5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2205.91, 267.147 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="dead6" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2565.17, 186.715 )
+target_stage = "res://NewWorld.tscn"
+
+[node name="changeS" parent="dead6" instance=ExtResource( 9 )]
+position = Vector2( -212.344, -157.49 )
+target_stage = "res://thank.tscn"
+
+[node name="Skyenemy" parent="." instance=ExtResource( 20 )]
+position = Vector2( 500.678, 172.055 )
+
+[node name="Skyenemy2" parent="." instance=ExtResource( 20 )]
+position = Vector2( 826.605, 120.914 )
+
+[node name="Skyenemy3" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1379, 99.317 )
+
+[node name="Skyenemy5" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1677.18, 36.5683 )
+
+[node name="Skyenemy6" parent="." instance=ExtResource( 20 )]
+position = Vector2( 2040.26, 29.8941 )
+
+[node name="Skyenemy4" parent="." instance=ExtResource( 20 )]
+position = Vector2( 1091.92, 11.6358 )

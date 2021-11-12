@@ -1,0 +1,74 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 06.png" type="Texture" id=1]
+[ext_resource path="res://Skyenemy.gd" type="Script" id=2]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 01.png" type="Texture" id=3]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 04.png" type="Texture" id=4]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 03.png" type="Texture" id=5]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 03.png" type="Texture" id=6]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 04.png" type="Texture" id=7]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 08.png" type="Texture" id=8]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 06.png" type="Texture" id=9]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 09.png" type="Texture" id=10]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" type="Texture" id=11]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 02.png" type="Texture" id=12]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 01.png" type="Texture" id=13]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 02.png" type="Texture" id=14]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 05.png" type="Texture" id=15]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/09-Dead Hit/Dead Hit 03.png" type="Texture" id=16]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/09-Dead Hit/Dead Hit 04.png" type="Texture" id=17]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 03.png" type="Texture" id=18]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/09-Dead Hit/Dead Hit 01.png" type="Texture" id=19]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 05.png" type="Texture" id=20]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 07.png" type="Texture" id=21]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/08-Hit/Hit 02.png" type="Texture" id=22]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/09-Dead Hit/Dead Hit 02.png" type="Texture" id=23]
+[ext_resource path="res://player/piret/Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 04.png" type="Texture" id=24]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 14 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 15 ), ExtResource( 9 ), ExtResource( 21 ), ExtResource( 8 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 22 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 23 ), ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 12 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 20 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 38.626, 26.1735 )
+
+[node name="Skyenemy" type="KinematicBody2D"]
+position = Vector2( 43.7266, 42.4653 )
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 50.5924, 37.0858 )
+scale = Vector2( 1.94986, 1.94986 )
+frames = SubResource( 1 )
+animation = "run"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 52.3805, 35.9269 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 88.9694, 40.6498 )
+enabled = true
+cast_to = Vector2( 0, 30 )
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

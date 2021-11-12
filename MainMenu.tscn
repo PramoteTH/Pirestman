@@ -1,0 +1,93 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://start/version.png" type="Texture" id=2]
+[ext_resource path="res://start/exit2.png" type="Texture" id=3]
+[ext_resource path="res://start/exit.png" type="Texture" id=4]
+[ext_resource path="res://start/start.png" type="Texture" id=5]
+[ext_resource path="res://start/start02.png" type="Texture" id=6]
+[ext_resource path="res://start/con2.png" type="Texture" id=7]
+[ext_resource path="res://start/con1.png" type="Texture" id=8]
+[ext_resource path="res://start/logo.png" type="Texture" id=9]
+[ext_resource path="res://start/bg.png" type="Texture" id=10]
+[ext_resource path="res://player/CGM2-Happy-Adventure-FULL-Loop.wav" type="AudioStream" id=11]
+
+[node name="MainMenu" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 0
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite2" type="Sprite" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sprite2"]
+stream = ExtResource( 11 )
+volume_db = -15.0
+pitch_scale = 0.8
+autoplay = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 512.359, 299.68 )
+texture = ExtResource( 10 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 362.0
+margin_bottom = 600.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer"]
+margin_right = 362.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 366.0
+margin_right = 666.0
+margin_bottom = 600.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer2"]
+margin_right = 300.0
+margin_bottom = 300.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 9 )
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/VBoxContainer2"]
+margin_top = 304.0
+margin_right = 300.0
+margin_bottom = 384.0
+texture_normal = ExtResource( 6 )
+texture_focused = ExtResource( 5 )
+
+[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/VBoxContainer2"]
+margin_top = 388.0
+margin_right = 300.0
+margin_bottom = 468.0
+texture_normal = ExtResource( 7 )
+texture_focused = ExtResource( 8 )
+
+[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/VBoxContainer2"]
+margin_top = 472.0
+margin_right = 300.0
+margin_bottom = 552.0
+texture_normal = ExtResource( 3 )
+texture_focused = ExtResource( 4 )
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 670.0
+margin_right = 670.0
+margin_bottom = 600.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer3"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/TextureButton2" to="." method="_on_TextureButton2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/TextureButton3" to="." method="_on_TextureButton3_pressed"]

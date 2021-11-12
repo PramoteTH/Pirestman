@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Baldurs Gate OST - Down to the Sewers.wav-edf73297aacc050ec34bc95d40b9ac02.sample"
+
+[deps]
+
+source_file="res://start/Baldurs Gate OST - Down to the Sewers.wav"
+dest_files=[ "res://.import/Baldurs Gate OST - Down to the Sewers.wav-edf73297aacc050ec34bc95d40b9ac02.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

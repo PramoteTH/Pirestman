@@ -1,0 +1,894 @@
+[gd_scene load_steps=51 format=2]
+
+[ext_resource path="res://player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://map/craftpix-net-481532-free-medieval-tileset-pixel-art-pack/Medieval_tiles_free2.png" type="Texture" id=2]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/3.png" type="Texture" id=3]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/5.png" type="Texture" id=4]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/2.png" type="Texture" id=5]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/4.png" type="Texture" id=6]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/6.png" type="Texture" id=7]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/1.png" type="Texture" id=8]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/1.png" type="Texture" id=9]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/8.png" type="Texture" id=10]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/2.png" type="Texture" id=11]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/3.png" type="Texture" id=12]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/7.png" type="Texture" id=13]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/5.png" type="Texture" id=14]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/6-Candle/4.png" type="Texture" id=15]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/7-Candle Light/1.png" type="Texture" id=16]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/7-Candle Light/4.png" type="Texture" id=17]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/7-Candle Light/2.png" type="Texture" id=18]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/7-Candle Light/5.png" type="Texture" id=19]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/7-Candle Light/3.png" type="Texture" id=20]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/12-Other Objects/Windows.png" type="Texture" id=21]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/8-Window Light/4.png" type="Texture" id=22]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/8-Window Light/3.png" type="Texture" id=23]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/8-Window Light/1.png" type="Texture" id=24]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/8-Window Light/2.png" type="Texture" id=25]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/3.png" type="Texture" id=26]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/5.png" type="Texture" id=27]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/1.png" type="Texture" id=28]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/12-Other Objects/Barrel.png" type="Texture" id=29]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/12-Other Objects/Blue Bottle.png" type="Texture" id=30]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/4.png" type="Texture" id=31]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/6.png" type="Texture" id=32]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/7.png" type="Texture" id=33]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/8.png" type="Texture" id=34]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/9.png" type="Texture" id=35]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/10.png" type="Texture" id=36]
+[ext_resource path="res://player/piret/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/2.png" type="Texture" id=37]
+[ext_resource path="res://bossSky.tscn" type="PackedScene" id=38]
+[ext_resource path="res://start/Baldurs Gate OST - Down to the Sewers.wav" type="AudioStream" id=39]
+[ext_resource path="res://changeS.tscn" type="PackedScene" id=40]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 576.171, 98.5118 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 75.239, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 28.0269, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 207.333, 10 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 158.665, 10 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 7 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 17 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 37 ), ExtResource( 26 ), ExtResource( 31 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="BossStage" type="Node2D"]
+
+[node name="Bg" type="Sprite" parent="."]
+position = Vector2( 17.9968, 87.2974 )
+region_enabled = true
+region_rect = Rect2( 0, 2.52728, 22.795, 31.9671 )
+
+[node name="Medieval_tiles_free64" type="Sprite" parent="Bg"]
+position = Vector2( 1412.8, 386.202 )
+scale = Vector2( 62.7088, 56.1217 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 54.4626, 62.7581, 45.7103, 21.097 )
+
+[node name="Medieval_tiles_free68" type="Sprite" parent="Bg"]
+position = Vector2( 1429.13, 58.4906 )
+scale = Vector2( 2.97183, 2.97183 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free78" type="Sprite" parent="Bg"]
+position = Vector2( 250.266, 267.979 )
+scale = Vector2( 2.97183, 2.97183 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free80" type="Sprite" parent="Bg"]
+position = Vector2( 702.668, 291.524 )
+scale = Vector2( 2.97183, 2.97183 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free81" type="Sprite" parent="Bg"]
+position = Vector2( 978.482, 340.296 )
+scale = Vector2( 2.97183, 2.97183 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free69" type="Sprite" parent="Bg"]
+position = Vector2( 1429.13, 268.491 )
+scale = Vector2( -2.972, 2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free70" type="Sprite" parent="Bg"]
+position = Vector2( 1888.79, 55.0565 )
+scale = Vector2( 2.97183, 2.97183 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free71" type="Sprite" parent="Bg"]
+position = Vector2( 1889.52, 263.16 )
+scale = Vector2( -2.972, 2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free72" type="Sprite" parent="Bg"]
+position = Vector2( 1251.6, 482.355 )
+scale = Vector2( -3.23036, 3.36681 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free82" type="Sprite" parent="Bg"]
+position = Vector2( 810.136, 439.83 )
+scale = Vector2( -6.73923, 2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 147.083, 274.843, 35.1524, 26.5786 )
+
+[node name="Medieval_tiles_free83" type="Sprite" parent="Bg"]
+position = Vector2( 986.114, 525.776 )
+rotation = 0.785398
+scale = Vector2( -8.39513, 5.44059 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 147.083, 274.843, 35.1524, 26.5786 )
+
+[node name="Medieval_tiles_free84" type="Sprite" parent="Bg"]
+position = Vector2( 1066.71, 298.177 )
+rotation = 0.785398
+scale = Vector2( -8.39513, 2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 147.083, 274.843, 35.1524, 26.5786 )
+
+[node name="Medieval_tiles_free85" type="Sprite" parent="Bg"]
+position = Vector2( 1117.05, 246.06 )
+scale = Vector2( -3.22791, 6.91822 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 147.083, 274.843, 35.1524, 26.5786 )
+
+[node name="Medieval_tiles_free73" type="Sprite" parent="Bg"]
+position = Vector2( 1732.12, 468.339 )
+scale = Vector2( 2.972, 2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 155.083, 71.0795 )
+
+[node name="Medieval_tiles_free77" type="Sprite" parent="Bg"]
+position = Vector2( 1775.84, 614.655 )
+scale = Vector2( 17.5308, 2.51746 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 99.4638, 666.681, 67.2025, 37.4783 )
+
+[node name="Medieval_tiles_free74" type="Sprite" parent="Bg"]
+position = Vector2( 2265.24, 54.6179 )
+scale = Vector2( 2.972, 2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 103.388, 71.0795 )
+
+[node name="Medieval_tiles_free75" type="Sprite" parent="Bg"]
+position = Vector2( 2273.33, 264.842 )
+scale = Vector2( -2.972, 2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 103.388, 71.0795 )
+
+[node name="Medieval_tiles_free76" type="Sprite" parent="Bg"]
+position = Vector2( 2174.43, 470.021 )
+scale = Vector2( -2.972, -2.972 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 297.194, 587.847, 148.621, 71.0795 )
+
+[node name="Medieval_tiles_free79" type="Sprite" parent="Bg"]
+position = Vector2( 348.71, 347.641 )
+scale = Vector2( 1.64891, 1.64891 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 259.937, 306.613, 40.8112, 32.649 )
+
+[node name="Medieval_tiles_free2" type="Sprite" parent="Bg"]
+position = Vector2( 261.722, 286.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 16, 49.2457, 553.447, 253.434 )
+
+[node name="Medieval_tiles_free3" type="Sprite" parent="Bg"]
+position = Vector2( 561.068, 286.383 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free4" type="Sprite" parent="Bg"]
+position = Vector2( 610.094, 286.439 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free5" type="Sprite" parent="Bg"]
+position = Vector2( 657.343, 286.327 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free6" type="Sprite" parent="Bg"]
+position = Vector2( 706.369, 286.383 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free7" type="Sprite" parent="Bg"]
+position = Vector2( 756.394, 286.383 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free8" type="Sprite" parent="Bg"]
+position = Vector2( 805.42, 286.439 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free17" type="Sprite" parent="Bg"]
+position = Vector2( 1171.7, 505.253 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free20" type="Sprite" parent="Bg"]
+position = Vector2( 1227.16, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free67" type="Sprite" parent="Bg"]
+position = Vector2( 1180.16, 676.51 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free21" type="Sprite" parent="Bg"]
+position = Vector2( 1276.56, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free22" type="Sprite" parent="Bg"]
+position = Vector2( 1322.92, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free23" type="Sprite" parent="Bg"]
+position = Vector2( 1372.31, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free24" type="Sprite" parent="Bg"]
+position = Vector2( 1419.93, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free25" type="Sprite" parent="Bg"]
+position = Vector2( 1469.33, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free26" type="Sprite" parent="Bg"]
+position = Vector2( 1515.68, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free27" type="Sprite" parent="Bg"]
+position = Vector2( 1565.08, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free28" type="Sprite" parent="Bg"]
+position = Vector2( 1612.7, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free29" type="Sprite" parent="Bg"]
+position = Vector2( 1662.09, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free30" type="Sprite" parent="Bg"]
+position = Vector2( 1708.45, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free31" type="Sprite" parent="Bg"]
+position = Vector2( 1757.85, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free32" type="Sprite" parent="Bg"]
+position = Vector2( 1805.46, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free33" type="Sprite" parent="Bg"]
+position = Vector2( 1854.86, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free34" type="Sprite" parent="Bg"]
+position = Vector2( 1901.22, 676.01 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free35" type="Sprite" parent="Bg"]
+position = Vector2( 1950.62, 676.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free36" type="Sprite" parent="Bg"]
+position = Vector2( 1998.49, 677.53 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free37" type="Sprite" parent="Bg"]
+position = Vector2( 2044.85, 677.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free38" type="Sprite" parent="Bg"]
+position = Vector2( 2094.25, 677.53 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free86" type="Sprite" parent="Bg"]
+position = Vector2( 2415.39, 172.902 )
+rotation = 3.14159
+scale = Vector2( 3.22791, -18.7555 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 147.083, 274.843, 35.1524, 26.5786 )
+
+[node name="Medieval_tiles_free39" type="Sprite" parent="Bg"]
+position = Vector2( 2141.86, 677.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free40" type="Sprite" parent="Bg"]
+position = Vector2( 2191.26, 677.53 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free41" type="Sprite" parent="Bg"]
+position = Vector2( 2237.62, 677.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free42" type="Sprite" parent="Bg"]
+position = Vector2( 2287.01, 677.53 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free43" type="Sprite" parent="Bg"]
+position = Vector2( 2334.63, 677.27 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 135.578, 253.629, 48.6871, 42.9592 )
+
+[node name="Medieval_tiles_free18" type="Sprite" parent="Bg"]
+position = Vector2( 1187.97, 368.494 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free66" type="Sprite" parent="Bg"]
+position = Vector2( 1182.9, 628.725 )
+scale = Vector2( -1, 0.594 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 589.484, 158.742, 40.436, 99.0011 )
+
+[node name="Medieval_tiles_free19" type="Sprite" parent="Bg"]
+position = Vector2( 1188.34, 249.574 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free50" type="Sprite" parent="Bg"]
+position = Vector2( 1187.66, 131.848 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free63" type="Sprite" parent="Bg"]
+position = Vector2( 475.895, 147.015 )
+scale = Vector2( 2.64978, 2.68179 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 54.4626, 62.7581, 45.7103, 21.097 )
+
+[node name="Medieval_tiles_free51" type="Sprite" parent="Bg"]
+position = Vector2( 1186.33, 15.717 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free52" type="Sprite" parent="Bg"]
+position = Vector2( 1258.74, -56.3643 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free53" type="Sprite" parent="Bg"]
+position = Vector2( 1376.89, -56.2052 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free54" type="Sprite" parent="Bg"]
+position = Vector2( 1495.61, -55.9943 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free55" type="Sprite" parent="Bg"]
+position = Vector2( 1613.75, -55.8352 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free56" type="Sprite" parent="Bg"]
+position = Vector2( 1732.45, -56.0447 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free57" type="Sprite" parent="Bg"]
+position = Vector2( 1850.81, -56.0945 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free58" type="Sprite" parent="Bg"]
+position = Vector2( 1968.95, -55.9354 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free59" type="Sprite" parent="Bg"]
+position = Vector2( 2087.64, -56.145 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free60" type="Sprite" parent="Bg"]
+position = Vector2( 2205.79, -56.4967 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free61" type="Sprite" parent="Bg"]
+position = Vector2( 2310.63, -56.3316 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 90.41 )
+
+[node name="Medieval_tiles_free44" type="Sprite" parent="Bg"]
+position = Vector2( 2366.69, 527.602 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free65" type="Sprite" parent="Bg"]
+position = Vector2( 2366.69, 612.016 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free45" type="Sprite" parent="Bg"]
+position = Vector2( 2366.69, 409.602 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free46" type="Sprite" parent="Bg"]
+position = Vector2( 2366.69, 290.602 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free47" type="Sprite" parent="Bg"]
+position = Vector2( 2366.69, 172.876 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free48" type="Sprite" parent="Bg"]
+position = Vector2( 2366.69, 172.876 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free49" type="Sprite" parent="Bg"]
+position = Vector2( 2367.38, 55.1508 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 124.556, 61.5164, 118.932 )
+
+[node name="Medieval_tiles_free62" type="Sprite" parent="Bg"]
+position = Vector2( 2367.38, -25.3833 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 20.4316, 134.776, 61.5164, 42.9592 )
+
+[node name="Medieval_tiles_free9" type="Sprite" parent="Bg"]
+position = Vector2( 852.669, 286.327 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free10" type="Sprite" parent="Bg"]
+position = Vector2( 901.695, 286.383 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 131.074, 49.2457, 54.7966, 253.434 )
+
+[node name="Medieval_tiles_free11" type="Sprite" parent="Bg"]
+position = Vector2( 946.289, 309.309 )
+rotation = -1.74846e-07
+scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 792.058, 66.3696, 37.6726, 188.363 )
+
+[node name="Medieval_tiles_free12" type="Sprite" parent="Bg"]
+position = Vector2( 983.419, 346.439 )
+rotation = -1.74846e-07
+scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 792.058, 66.3696, 37.6726, 188.363 )
+
+[node name="Medieval_tiles_free13" type="Sprite" parent="Bg"]
+position = Vector2( 1018.38, 381.716 )
+rotation = -1.74846e-07
+scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 792.058, 66.3696, 37.6726, 188.363 )
+
+[node name="Medieval_tiles_free14" type="Sprite" parent="Bg"]
+position = Vector2( 1054.83, 417.97 )
+rotation = -1.74846e-07
+scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 792.058, 66.3696, 37.6726, 188.363 )
+
+[node name="Medieval_tiles_free15" type="Sprite" parent="Bg"]
+position = Vector2( 1091.96, 455.099 )
+rotation = -1.74846e-07
+scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 792.058, 66.3696, 37.6726, 188.363 )
+
+[node name="Medieval_tiles_free16" type="Sprite" parent="Bg"]
+position = Vector2( 1126.93, 490.376 )
+rotation = -1.74846e-07
+scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 792.058, 66.3696, 37.6726, 188.363 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Bg"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1779.83, 757.668 )
+shape = SubResource( 1 )
+
+[node name="Blue Bottle" type="Sprite" parent="Bg/StaticBody2D/CollisionShape2D"]
+position = Vector2( -189.213, -196.212 )
+scale = Vector2( 1.96622, 1.96622 )
+texture = ExtResource( 30 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1770.72, -145.129 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 2456.28, 330.13 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 104.084, 377.837 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 101.74, 211.851 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 249.026, 353.912 )
+rotation = -0.322886
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 440.125, 353.351 )
+rotation = 0.322886
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 442.65, 187.507 )
+rotation = 0.322886
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 244.536, 188.349 )
+rotation = -0.322886
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 21.837, 295.996 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 345.657, 163.502 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 345.014, 329.935 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1169.47, 595.987 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1189.7, 633.444 )
+rotation = 1.5708
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1171.46, 430.933 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 718.722, 376.67 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 717.222, 210.92 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1041.68, 321.022 )
+rotation = 0.785398
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1188.92, 266.277 )
+rotation = 1.5708
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1187.04, -20.6605 )
+rotation = 1.5708
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Bg/StaticBody2D"]
+position = Vector2( 1031.57, 486.322 )
+rotation = 0.785398
+shape = SubResource( 5 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Bg"]
+stream = ExtResource( 39 )
+volume_db = -10.0
+pitch_scale = 0.8
+autoplay = true
+
+[node name="obj" type="Sprite" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="obj"]
+position = Vector2( 109.37, 406.263 )
+frames = SubResource( 6 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="obj"]
+position = Vector2( 2318.98, 698.152 )
+frames = SubResource( 6 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="obj"]
+position = Vector2( 2256.03, 713.176 )
+scale = Vector2( 2.06771, 2.06771 )
+frames = SubResource( 7 )
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="obj"]
+position = Vector2( 568.791, 428.664 )
+scale = Vector2( 1.49564, 1.49564 )
+frames = SubResource( 7 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="obj"]
+position = Vector2( 169.983, 431.493 )
+scale = Vector2( 1.49564, 1.49564 )
+frames = SubResource( 7 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="obj"]
+position = Vector2( 171.494, 412.327 )
+scale = Vector2( 0.657888, 0.657888 )
+frames = SubResource( 8 )
+playing = true
+
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="obj"]
+position = Vector2( 570.611, 411.66 )
+scale = Vector2( 0.657888, 0.657888 )
+frames = SubResource( 8 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="obj"]
+position = Vector2( 2257.06, 687.377 )
+scale = Vector2( 0.657888, 0.657888 )
+frames = SubResource( 8 )
+frame = 4
+playing = true
+
+[node name="Windows" type="Sprite" parent="obj"]
+position = Vector2( 1393.33, 371.42 )
+texture = ExtResource( 21 )
+
+[node name="Windows2" type="Sprite" parent="obj"]
+position = Vector2( 1739.34, 469.039 )
+texture = ExtResource( 21 )
+
+[node name="Windows3" type="Sprite" parent="obj"]
+position = Vector2( 2108.45, 388.429 )
+texture = ExtResource( 21 )
+
+[node name="AnimatedSprite9" type="AnimatedSprite" parent="obj"]
+position = Vector2( 1461.22, 419.875 )
+frames = SubResource( 9 )
+playing = true
+
+[node name="AnimatedSprite10" type="AnimatedSprite" parent="obj"]
+position = Vector2( 1803.86, 518.291 )
+frames = SubResource( 9 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite11" type="AnimatedSprite" parent="obj"]
+position = Vector2( 2173.55, 437.547 )
+frames = SubResource( 9 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite12" type="AnimatedSprite" parent="obj"]
+position = Vector2( 361.906, 387.827 )
+scale = Vector2( 0.558058, 0.558058 )
+frames = SubResource( 10 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite13" type="AnimatedSprite" parent="obj"]
+position = Vector2( 1498.93, 725.117 )
+scale = Vector2( 0.558058, 0.558058 )
+frames = SubResource( 10 )
+frame = 3
+playing = true
+
+[node name="Barrel" type="Sprite" parent="obj"]
+position = Vector2( 1552.95, 714.313 )
+scale = Vector2( 1.38139, 1.38139 )
+texture = ExtResource( 29 )
+
+[node name="Barrel2" type="Sprite" parent="obj"]
+position = Vector2( 1607.06, 703.837 )
+scale = Vector2( 1.74947, 1.74947 )
+texture = ExtResource( 29 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 96.6711, 409.286 )
+
+[node name="bossSky" parent="." instance=ExtResource( 38 )]
+position = Vector2( 1986.57, 542.907 )
+
+[node name="changeS" parent="." instance=ExtResource( 40 )]
+position = Vector2( 2319.05, 705.234 )
+target_stage = "res://thank.tscn"

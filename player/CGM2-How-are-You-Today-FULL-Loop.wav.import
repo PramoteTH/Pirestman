@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CGM2-How-are-You-Today-FULL-Loop.wav-2c0f009c493402a28aa16da68c2e5c7b.sample"
+
+[deps]
+
+source_file="res://player/CGM2-How-are-You-Today-FULL-Loop.wav"
+dest_files=[ "res://.import/CGM2-How-are-You-Today-FULL-Loop.wav-2c0f009c493402a28aa16da68c2e5c7b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
